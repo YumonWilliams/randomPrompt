@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex Omnisystem</title>
+    <style>
+        
+        .pixelify-sans-title{
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        }
+
+        body {
+            background-image: url("media/images/orbital_ring_dark.png");
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            background-image: url("media/images/orbital_ring.png");
+        }
+
+        h2 {
+            background-image: url("media/images/orbital_ring_red.png");
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div id = "page">
+    <h1 class="pixelify-sans-title">Codex Omnisystem</h1>
+    <button onclick="generateIdea()">
+        <img src="./media/images/spinning.gif" width="50%" height="auto" style="text-align:left;">
+    </button>
+    <h2 class="pixelify-sans-title">
+        Click the Codex Omnitron and test your might!<br><br> Your mission will appear below...
+    </h2>
+    <h1 id="mission"></h1>
+ </div>
+</body>
+<script>
+    const promptArray = ["ALBUM ART: SQUARE", "ALBUM ART: JCARD", "EVENT FLYER", "MAGAZINE PAGE", "3D RENDER: ASSET PACK","3D RENDER: GIF",
+                        "3D RENDER: CHARACTER","3D RENDER: LANDSCAPE", "GRAPHICS PROGRAMMING", "MOUSE PAINTING", "WEBSITE", "WRITING: JOURNAL", "TRADITIONAL DRAWING", "FIGURE DRAWING SESSION: MOUSE PAINTING", "FIGURE DRAWING SESSION: TRADITIONAL","RESEARCH, REFERENCE & INSPIRATION","VJ SESSION - GLITCH MIX", "GAME DEV", "SKATEBOARD DECK", ] 
+
+    function generateIdea() {
+      const randomIndex = Math.floor(Math.random() * promptArray.length);
+      document.getElementById("mission").textContent = promptArray[randomIndex];
+    };
+</script>
+</html>
