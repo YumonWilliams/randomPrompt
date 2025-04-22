@@ -12,14 +12,18 @@
         font-weight: 500;
         font-style: normal;
         }
-
+        
         body {
             background-image: url("media/images/orbital_ring_dark.png");
+        }
+
+        #page {
+           
             color: white;
             text-align: center;
         }
 
-        button {
+        #button1 {
             background-image: url("media/images/orbital_ring.png");
         }
 
@@ -32,16 +36,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
- <div id = "page">
-    <h1 class="pixelify-sans-title">Codex Omnisystem</h1>
-    <button onclick="generateIdea()">
-        <img src="./media/images/spinning.gif" width="50%" height="auto" style="text-align:left;">
-    </button>
-    <h2 class="pixelify-sans-title">
-        Click the Codex Omnitron and test your might!<br><br> Your mission will appear below...
-    </h2>
-    <h1 id="mission"></h1>
- </div>
+    <a href="https://yumonwilliams.github.io/NEOCOSMA_Site/home.html">
+        <img src="./media/images/Logo_Small.png" width="5%" height="auto">
+    </a>
+        
+   
+    <div id = "page">
+        <h1 class="pixelify-sans-title">Codex Omnisystem</h1>
+        <button id="button1" onclick="generateIdea()">
+            <img src="./media/images/spinning.gif" width="50%" height="auto" style="text-align:left;">
+        </button>
+        <h2 class="pixelify-sans-title">
+            Click the Codex Omnitron and test your might!<br><br> Your mission will appear below...
+        </h2>
+        <h1 id="mission"></h1>
+    </div>
 </body>
 <script>
     const promptArray = ["ALBUM ART: SQUARE", "ALBUM ART: JCARD", "EVENT FLYER", "MAGAZINE PAGE", "3D RENDER: ASSET PACK","3D RENDER: GIF",
